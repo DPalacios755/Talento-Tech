@@ -1,0 +1,85 @@
+body {
+
+    background-image: url(https://www.formulamoto.es/wp-content/uploads/2022/10/honda-transalp-2023-portada-novedades-1200x675.jpg);
+    height:auto;
+    width: auto;
+    text-align: center;
+    color: black;
+    background-size:cover;
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#miFormulario {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    border: 30px solid rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    display: flex;
+    font-family: "Kanit", sans-serif;
+    flex-wrap: wrap;
+
+}
+.formulario {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    border: 30px  rgba(0, 0, 0, 0.4);
+    margin: 0 auto; 
+    width: 35rem;
+    height: 30rem;
+    top: 50%;
+    position: relative;
+    transform: translateY(10%);
+    align-items: center; 
+}
+h1{
+    padding:5px;
+    font-size: 50px;
+}
+
+form label {
+    width:10px;
+    float:left;
+    padding: 5px;
+  
+    
+}
+input {
+    width:350px;
+    justify-content:flex-end;
+    font-size: 20px;
+    margin:5px;
+    float: right;
+    padding: 10px;
+}
+.Acceder{
+    width: 200px;
+    transform: translateY(-10%);
+}
+
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.volver{
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px;
+    justify-content: center;
+    
+    
+}
+a{
+    justify-content: center;
+}
+
+

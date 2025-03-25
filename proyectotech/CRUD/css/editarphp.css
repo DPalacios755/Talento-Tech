@@ -1,0 +1,48 @@
+body {
+
+    background-image: url(https://www.formulamoto.es/wp-content/uploads/2022/10/honda-transalp-2023-portada-novedades-1200x675.jpg);
+    height:auto;
+    width: auto;
+    background-size:cover;
+    font-family: "Kanit", sans-serif;
+    
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 3%;
+}
+form {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box; 
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2%;
+    border-radius: 3%;
+}
+label {
+    font-size: 20px;
+    font-weight:bold;
+    justify-content: center;
+    color: white;
+}
+input{
+    font-size: 20px;
+    
+    justify-content: center;
+}
+.boton{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.473);
+    width: 30%;
+    font-size: 30px;
+    
+
+}
+.boton:hover {
+    color:rgb(2, 2, 2);
+    background-color: #d07a01;
+}

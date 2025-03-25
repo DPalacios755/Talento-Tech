@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Margarine", sans-serif;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura visible */
+    margin: 0;
+}
+
+nav{   /* ajustamos el nav en horizontal */
+	max-width: 500px;
+	margin: auto;
+    margin-top: 10px;
+    background: transparent;
+    opacity: 0.7;
+    border: #fff solid 1px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-horizontal > li > a{ /* se ajusta las letras de el menu horizontal */
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px  #002E5B;
+    z-index: 2;
+} 
+.menu-horizontal > li:hover{ /* le damos animacion al pasar el cursor */
+    background: rgba(248, 248, 248, 0.17);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    z-index: 2;
+}
+.menu-vertical{ /* los agrupa el menu vertical */
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 110px;
+    background: transparent;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.menu-horizontal li:hover .menu-vertical{ /* nos permite ver lo que esta agrupado */
+	display: block;
+}
+.menu-vertical li:hover{  /* le damos animacion cuando pasa el cursor */
+	background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    z-index: 2;
+    transform: scale(0.97);
+}
+
+.menu-vertical li a{  /* los separamos y los volvemos cajas */
+	display: block;
+	color: #ffffff;
+    text-shadow: 2px 2px 3px  #002E5B;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+    z-index: 2;
+}
+
+li ,a { /* le damos color a los li que contengan a  */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1 { /* le damos tamaño a los h1 */
+    font-weight: 300px;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    
+}
+
+.video-container:after {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    
+}
+
+.content {
+    z-index: 10;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    margin-top: 25px;
+    opacity: 0.7;
+    background: transparent;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+
+.showcase {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* iniciamos con el estilo de las card */
+
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+}
+
+.container  {
+    width: 100%;
+    max-width: 1200px;
+    height: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.container .card img {
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4 {
+    font-weight: 1000;
+    margin: 10px;
+}
+.container .card p {
+    margin: 10px;
+    font-size: 15px;
+}
+
+/* organizamos el footer */
+
+.container {
+    flex: 1; /* El contenido ocupa todo el espacio restante vertical */
+    padding-bottom: 50px; /* Espacio para el footer */
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    padding: 10px;
+    color: #f0f0f0;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.footer-content h3 {
+    margin: 10px;
+}

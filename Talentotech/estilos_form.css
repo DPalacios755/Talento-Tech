@@ -1,0 +1,35 @@
+html, body {
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+input { 
+    vertical-align: auto;
+}
+
+.centered-container {
+    text-align: center; /* Opcional: Para centrar el texto dentro del contenedor */
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    /* Otros estilos que desees aplicar al contenedor principal */
+}
+
+.input-wrapper label {
+    margin-right: 10px; /* Espacio entre el texto y la caja de entrada */
+}
+
+.input-container {
+    flex: 1; /* La caja de entrada ocupa todo el espacio disponible */
+}
+
+.input-container input {
+    width: 100%; /* La caja de entrada ocupa todo el ancho disponible */
+    /* Otros estilos que desees aplicar a la caja de entrada */
+}

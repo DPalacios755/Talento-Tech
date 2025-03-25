@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.4)
+    )
+    ,url("../img/R.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formulario__login {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 0 15px black;
+    width: 400px;
+    height: 430px;
+    margin: 110px auto;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: block;
+}
+
+.formulario__login h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.formulario__login label {
+    display: block;
+    margin-top:40px;
+    text-transform: uppercase;
+}
+
+.label {
+    margin: 15px 0px;
+}
+
+.formulario__login input[type="email"], 
+input[type="password"] {
+
+    outline: none;
+    width: 100%;
+    margin: auto;
+    padding: 6px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    transition: 0.3s;
+}
+
+.formulario__login input[type="email"]:focus, 
+input[type="password"]:focus {
+    border-bottom: 3px solid crimson;
+}
+
+
+input::placeholder {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn__login {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 8px 30px;
+    border: none;
+    background-color: crimson;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.btn__login:hover {
+    background-color: rgb(220, 78, 107);
+}
+
+.register {
+        display: flex;
+        color: #fff;
+        justify-content: center;
+}
+
+.register a {
+    color: rgb(18, 177, 124);
+    text-decoration: none;
+    margin: 0px 12px;
+}
+
+.register a:hover {
+    color: rgb(63, 216, 165);
+}
